@@ -8,8 +8,6 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    filename: { type: String, default: "listingimage" },
-    url: {
       type: String,
       default:
         "https://image.cnbcfm.com/api/v1/image/106011877-1562774879189za_120942_cape_town_beyond_000_webhero_1612_jva.jpg?v=1562774912",
@@ -17,7 +15,7 @@ const listingSchema = new Schema({
         v === ""
           ? "https://image.cnbcfm.com/api/v1/image/106011877-1562774879189za_120942_cape_town_beyond_000_webhero_1612_jva.jpg?v=1562774912"
           : v,
-    },
+    
   },
   price: Number,
   location: String,
